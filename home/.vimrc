@@ -9,7 +9,19 @@ call vundle#begin()
 
 " let Vundle manage Vundle, required
 Plugin 'VundleVim/Vundle.vim'
+
+"Nav
+Bundle 'scrooloose/nerdtree'
+Bundle 'rking/ag.vim'
+
+"Syntax
+Plugin 'othree/yajs.vim'
 Plugin 'elixir-lang/vim-elixir'
+
+" Colors
+Plugin 'larssmit/vim-getafe'
+Plugin 'quanganhdo/grb256'
+
 " All of your Plugins must be added before the following line
 call vundle#end()            " required
 filetype plugin indent on    " required
@@ -24,3 +36,23 @@ filetype plugin indent on    " required
 "
 " see :h vundle for more details or wiki for FAQ
 " Put your non-Plugin stuff after this line
+
+""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+" COLOR
+""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+:set t_Co=256 " 256 colors
+:syntax enable
+:set background=dark
+:color grb256
+:colorscheme getafe
+
+""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+" BASIC EDITING CONFIGURATION
+""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+set number
+set expandtab
+set tabstop=2
+set shiftwidth=2
+set softtabstop=2
+set autoindent
+let mapleader=","
